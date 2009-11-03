@@ -138,7 +138,7 @@ module Paperclip
     # the instance's errors and returns false, cancelling the save.
     def save
       if valid?
-        flush_deletes
+        flush_deletes unless @options[:keep_old_files]
         flush_writes
         @dirty = false
         true
