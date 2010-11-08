@@ -3,3 +3,8 @@
 tmp
 test/s3.yml
 public
+paperclip*.gem
+capybara*.html
+*.rbc
+.bundle
+*SPIKE*
